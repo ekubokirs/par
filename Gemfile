@@ -28,6 +28,10 @@ gem 'jbuilder', '~> 1.2'
 gem 'mongo_mapper', github: 'jnunemaker/mongomapper'
 gem 'bson_ext'
 
+
+gem 'compass-rails' # you need this or you get an err
+gem 'zurb-foundation', '~> 4.0.0'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
