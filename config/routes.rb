@@ -9,7 +9,7 @@ Par::Application.routes.draw do
 
   #Login
   get 'login' =>  'session#new'
-  get 'login' =>  'session#create'
+  post 'login' =>  'session#create'
 
   #Logout
   get    'logout' => 'session#destroy'

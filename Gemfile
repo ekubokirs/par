@@ -32,6 +32,10 @@ gem 'bson_ext'
 gem 'compass-rails' # you need this or you get an err
 gem 'zurb-foundation', '~> 4.0.0'
 
+gem 'paperclip', '~> 3.0'
+gem	'aws-s3'
+gem	'aws-sdk'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false

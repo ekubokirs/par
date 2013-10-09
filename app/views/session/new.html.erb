@@ -1,0 +1,34 @@
+<div class="pa_back">
+	<div class="row">
+		<div class="large-12 columns">
+			<h1 class="pa_pagehead pa_logo">ParDIY</h1>
+		</div>
+	</div>
+	<div class="row">
+		<div class="pa_alert">
+			<%= flash.alert %>
+	</div>
+	<div class="row">
+		<div class="large-5 columns pa_login">
+			<%= form_tag login_path do %>
+				<div class="pa_signup">
+					To sign up, please enter your e-mail and a new user email will be sent to you.
+				</div>
+				<div class="pa_reset">
+					To reset your password, please enter your e-mail and leave the password field blank.  A reset email will be sent to you.
+				</div>
+				<%= label_tag :email, "E-mail", :class => "pa_label" %>
+				<%= text_field_tag :email %>
+				<%= label_tag :password, "Password", :class => "pa_label", :id => "pa_passwordLabel" %>
+				<%= password_field_tag :password, nil, :id => "pa_inputPassword" %>
+				<div class="row">
+					<%= button_tag "Show Password", :id => "pa_toggle_password_field pa_showPassword", :class => "button alert" %>
+				</div>
+				<div class="row">
+					<%= submit_tag "Submit", :class => "button" %>
+					<%= button_tag "Register", :id => "pa_newReg" %>
+				</div>
+			<% end %>
+		</div>
+	</div>
+</div>

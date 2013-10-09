@@ -3,15 +3,22 @@ class RegistrationController < ApplicationController
 	before_action	:get_registrant
 
 	def new
-		@user = User.new
+		@user = User.new(email: @registrant.email)
 	end
 
 	def create
 		@user = User.new user_params
-		@user.save
+		@user.email = @registrant.email
 
-		redirect_to root_url
-		flash[:notice] = "Registration Completed!"
+		if @user.save
+			@registrant.destroy_all
+			session[:user_id] = @user.id
+			redirect_to root_url
+			flash[:notice] = "Registration Completed!"
+		else
+			redirect_to login_url
+			flash[:alert] = "Registration Error"
+		end
 	end
 	
 	private
@@ -36,6 +43,7 @@ class RegistrationController < ApplicationController
 			:email,
 			:password,
 			:password_confirmation,
+			:profile,
 			:birthday,
 			:bio
 		)

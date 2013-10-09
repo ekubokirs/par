@@ -1,6 +1,8 @@
 class Registrant
   include MongoMapper::Document
 
+  before_create :set_code_and_expires_at
+
   key :email,				String
   key :code,				String
   key :expires_at,	String

@@ -2,6 +2,7 @@ class User
   include MongoMapper::Document
 
   many  :events
+  # has_attached_file :profile
 
   key :first_name,  String
   key :last_name,   String
