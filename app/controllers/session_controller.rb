@@ -2,6 +2,7 @@ class SessionController < ApplicationController
 	before_action :is_authenticated, only: [:homepage]
 	
 	def homepage
+    @user = current_user
 	end
 	
 	def new
