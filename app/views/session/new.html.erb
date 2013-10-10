@@ -1,12 +1,13 @@
 <div class="pa_back">
 	<div class="row">
 		<div class="large-12 columns">
-			<h1 class="pa_pagehead pa_logo">ParDIY</h1>
+			<h1 class="pa_logo">ParDIY</h1>
 		</div>
 	</div>
 	<div class="row">
-		<div class="pa_alert">
+		<div class="large-5 columns pa_alert">
 			<%= flash.alert %>
+		</div>
 	</div>
 	<div class="row">
 		<div class="large-5 columns pa_login">
@@ -22,13 +23,17 @@
 				<%= label_tag :password, "Password", :class => "pa_label", :id => "pa_passwordLabel" %>
 				<%= password_field_tag :password, nil, :id => "pa_inputPassword" %>
 				<div class="row">
-					<%= button_tag "Show Password", :id => "pa_toggle_password_field pa_showPassword", :class => "button alert" %>
-				</div>
-				<div class="row">
-					<%= submit_tag "Submit", :class => "button" %>
-					<%= button_tag "Register", :id => "pa_newReg" %>
+					<%= button_tag "Show Password", :id => "pa_toggle_password_field pa_showPassword", :class => "small button alert" %>
+					<%= submit_tag "Submit", :class => "small button" %>
+					<%= button_tag "Register", :id => "pa_newReg", :class => "small button" %>
 				</div>
 			<% end %>
+		</div>
+		<div class="large-6 columns pa_greet">
+			<div class="row pa_hello">ParDIY On!</div>
+			<div class="row">Welcome to ParDIY!  We're psyched to see the awesome parties that each of you create and throw!  Have a great time!</div>
+			<div class="row pa_love">Love Always,</div>
+			<div class="row pa_names">Theresa and Emilia</div>
 		</div>
 	</div>
 </div>

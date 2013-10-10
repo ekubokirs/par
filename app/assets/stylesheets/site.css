@@ -1,0 +1,32 @@
+.pa_back{
+	margin: 5%;
+	border: 1px solid #c10528;
+	padding: 2%;
+	background-color: #f9fcff;
+}
+.pa_logo{
+	margin: 1%;
+	border: 1px solid #5bbf21;
+	text-align: center;
+	font-family: 'Unkempt', cursive;
+	font-size: 500%;
+}
+.pa_alert{
+	text-align: center;
+}
+.pa_signup{
+	display: none;
+	margin-bottom: 5%;
+	margin-top: 5%;
+}
+.pa_reset{
+	margin-bottom: 5%;
+	margin-top: 5%;
+
+}
+.pa_label{
+	
+}
+.pa_greet{
+	border: 1px solid;
+}

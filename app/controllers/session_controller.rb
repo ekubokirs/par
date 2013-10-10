@@ -3,6 +3,7 @@ class SessionController < ApplicationController
 	
 	def homepage
     @user = current_user
+    @events = current_user.events
 	end
 	
 	def new
