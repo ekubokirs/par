@@ -3,6 +3,7 @@
 	border: 1px solid #c10528;
 	padding: 2%;
 	background-color: #f9fcff;
+	border-radius: 5%;
 }
 .pa_logo{
 	margin: 1%;
@@ -13,20 +14,49 @@
 }
 .pa_alert{
 	text-align: center;
+	font-family: 'Caudex', cursive;
 }
 .pa_signup{
 	display: none;
 	margin-bottom: 5%;
 	margin-top: 5%;
+	font-family: 'Caudex', cursive;
+	text-align: center;
 }
 .pa_reset{
 	margin-bottom: 5%;
 	margin-top: 5%;
-
+	font-family: 'Caudex', cursive;
+	text-align: center;
 }
 .pa_label{
-	
+	font-family: 'Caudex', cursive;
 }
 .pa_greet{
 	border: 1px solid;
+	margin-right: 2.5%;
+	margin-left: 2.5%;
+}
+.pa_hello{
+	font-family: 'Caudex', cursive;
+	text-align: center;
+	font-size: 150%;
+	margin: 10px;
+}
+.pa_welcome{
+	font-family: 'Caudex', cursive;
+	font-size: 100%;
+	text-align: center;
+	margin: 10px;
+	padding: 5%;
+}
+.pa_love{
+	text-align: center;
+	font-family: 'Caudex', cursive;
+	margin: 5px;
+}
+.pa_names{
+	font-family: 'Alex Brush', cursive;
+	font-size: 250%;
+	text-align: center;
 }
