@@ -12,7 +12,11 @@ class RecipesController < ApplicationController
 	end
 
 	def create
+		@recipe = Recipe.new recipe_params
+		@recipe.save
 
+		redirect_to root_url
+		flash[:notice] = "Recipe Created"
 	end
 
 	def show
@@ -24,9 +28,31 @@ class RecipesController < ApplicationController
 	end
 
 	def update
+		@recipe = Recipe.find_by(params[:id])
+		@recipe.update_attributes(recipe_params)
+
+		redirect_to root_url
+		flash[:notice] = "Recipe Updated"
 	end
 
 	def destroy
+		recipe = Recipe.find(params[:id])
+		recipe.destroy
+
+		redirect_to root_url
+		flash[:notice] = "Recipe Deleted"
+	end
+
+	private
+
+	def recipe_params
+		params.require(:recipe).permit(
+			:supply,
+			:direction,
+			:prep_time,
+			:cook_time,
+			:food_item,
+			:food_type)
 	end
 
 end
