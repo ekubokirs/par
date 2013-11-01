@@ -29,4 +29,8 @@ class User
     end
   end
 
+  def name
+    User.find_by(params[:id]).first_name
+  end
+
 end

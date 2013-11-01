@@ -2,6 +2,8 @@ Par::Application.routes.draw do
 
   resources :events
   resources :users
+  resources :projects
+  resources :recipes
 
   #Registration
   get   'register/:code'  => 'registration#new', as: :register

@@ -1,0 +1,38 @@
+<%= render partial: "shared/user_nav" %>
+<div class="pa_back">
+	<div class="row pa_title">
+		<%= @event.title %>
+	</div>
+	<div class="row">
+		Event Creator: <%= @owner.name %>
+	</div>
+	<div class="row">
+		<div class="large-6 columns">
+			Event Location: <%= @event.venue %>
+		</div>
+		<div class="large-6 columns">
+			Event Type: <%= @event.event_type %>
+		</div>
+	</div>
+	<div class="row info">
+		<div class="large-6 columns offset-large-1">
+			Supplies:
+			<ul>
+				<% @event.supplies.each do |item|%>
+					<li> 
+						<%= item.amount %> 
+						<%= item.supply %>
+					</li>
+				<% end %>
+			</ul>
+		</div>
+		<div class="large-6 columns">
+		Project To Dos:
+			<ul>
+				<% @event.chores.each do |item|%>
+					<li> <%= item.chore %> </li>
+				<% end %>
+			</ul>
+		</div>
+	</div>
+</div>
