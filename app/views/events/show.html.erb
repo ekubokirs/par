@@ -7,15 +7,15 @@
 		Event Creator: <%= @owner.name %>
 	</div>
 	<div class="row">
-		<div class="large-6 columns">
+		<div class="col-md-6">
 			Event Location: <%= @event.venue %>
 		</div>
-		<div class="large-6 columns">
+		<div class="col-md-6">
 			Event Type: <%= @event.event_type %>
 		</div>
 	</div>
 	<div class="row info">
-		<div class="large-6 columns offset-large-1">
+		<div class="col-md-6 col-md-offset-1 col-xs-12">
 			Supplies:
 			<ul>
 				<% @event.supplies.each do |item|%>
@@ -26,7 +26,7 @@
 				<% end %>
 			</ul>
 		</div>
-		<div class="large-6 columns">
+		<div class="col-md-6 col-xs-12">
 		Project To Dos:
 			<ul>
 				<% @event.chores.each do |item|%>
