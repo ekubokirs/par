@@ -47,8 +47,8 @@ class RecipesController < ApplicationController
 
 	def recipe_params
 		params.require(:recipe).permit(
-			:supply,
-			:direction,
+			{supply:[]},
+			{direction:[]},
 			:prep_time,
 			:cook_time,
 			:food_item,

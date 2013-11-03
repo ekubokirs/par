@@ -3,8 +3,8 @@ class Recipe
 
   belongs_to :event
 
-  key :supply,		String
-  key :direction,	String
+  key :supply,		Array
+  key :direction,	Array
   key	:prep_time,	String
   key	:cook_time,	String
   key	:food_item,	String

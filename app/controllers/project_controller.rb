@@ -51,11 +51,11 @@ class ProjectController < ApplicationController
 
 	def project_params
 		params.require(:project).permit(
-			:supply,
-			:direction,
+			{supply:[]},
+			{direction:[]},
 			:prep_time,
 			:total_time,
-			:links,
+			{links:[]},
 			:project_title)
 	end
 
