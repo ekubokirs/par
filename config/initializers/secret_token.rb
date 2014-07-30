@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Par::Application.config.secret_key_base = '56be803f22926838328dd1abc8dfce7ec8c140758339fcee1d2369ddbc116503b717e170f502972d17c6854fd57d0de7e2357b36d1a878d23ba95726f148c4a2'
+Par::Application.config.secret_key_base = '4c7090f84214bb8089d4346aa780878bb2514dbcb02343ad4931223557d227ab355f82840ae9b3d9cc64ca718b4a4b8130e3ed3ec578c074a34cff8ac8480a8e'
