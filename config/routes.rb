@@ -1,5 +1,5 @@
 Par::Application.routes.draw do
-  root_to: 'sessions#index'
+  root 'sessions#index'
 
   resources :sessions
 
