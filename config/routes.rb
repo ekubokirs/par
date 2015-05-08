@@ -1,4 +1,10 @@
 Par::Application.routes.draw do
+  root_to: 'sessions#index'
+
+  resources :sessions
+
+  resources :parties
+
   devise_for :users
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
